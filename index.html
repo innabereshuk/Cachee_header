@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cachee_header</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("#nav__menu").on("click","a", function (event) {
+               event.preventDefault();
+               var id  = $(this).attr('href'),
+                   top = $(id).offset().top;
+               $('body,html').animate({scrollTop: top}, 1500);
+           });
+       });
+       </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav">
+                <div class="nav__logo">
+                    <span>Cachee</span>
+                </div>
+                <ul class="nav__menu" id="nav__menu">
+                    <li class="nav__menu__item">
+                        <a href="#" class="nav__menu__link">Home</a>
+                    </li>
+                    <li class="nav__menu__item">
+                        <a href="#about" class="nav__menu__link">About</a>
+                    </li>
+                    <li class="nav__menu__item">
+                        <a href="#" class="nav__menu__link">Services</a>
+                    </li>
+                    <li class="nav__menu__item">
+                        <a href="#" class="nav__menu__link">Gallery</a>
+                    </li>
+                    <li class="nav__menu__item">
+                        <a href="#" class="nav__menu__link">Blog</a>
+                    </li>
+                    <li class="nav__menu__item">
+                        <a href="#" class="nav__menu__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="section section__bg" style="background-image: url(./img/img1.jpg);">
+            <div class="container">
+                <div class="section__content">
+                    <h1 class="section__content__title">Fresh Life</h1>
+                    <p class="section__content__subtitle">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <button type="button" class="section__content__btn">GET FREE NOW</button>
+                </div>
+                <svg class="scroll"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                 width="24px" height="40px">
+                <image  x="0px" y="0px" width="24px" height="40px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAoCAQAAABOBPLeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjDAwDBTCKyuuFAAACAklEQVQ4y+3VMUiUYRzH8Y+vnjampiCcECKheCQIbZJSVF5jNEiBSk02OOnQJLU0ZEMOFUFimRDU4tJpUQgtQYSEhg7ioiWpdRItnmIN6nWXd56NQb/hD+/z//7e5/8+zwu/vCNSFKhx2gkRpfhqymsvzNj8jeSlGOp1andAutYMuuvDbsNlvSqx4rlpqzioVlQZ5l3zYAsr2Mavuq7AqpuemLe+vRpSqVWPSveUuwH5pXDJLSHvnfNMPGXiTXFvjDom7LjPJrZGiogJm3DeXPLNUcSSO1V5qsGCqKlAoS5hce1JnA4jRnQkn+e0iwvrUhio1oY+kykn05hStzSlD22qA2cUWTacdpQbKXVHw5YVaQk0I2Yxrfkzpe5oUQzNgQimJeRSwjQigTLEc+K2qUOB0K5ps2kDoSBja2s1L3vrT61B8trSVJDRMKDJpoH9G96p/7sdssDZv2EP/Tf8s4Z12X+QdBVgPbCC4n0ZirESmEStwpx4oRpMBcbRoiKnocJZjAfGrCl3MafhgjJrRgOzHqFbZE+8TjeGzAYS+i0o9lBVVrzKkBILbkvkl7Lku6iwRm99yYAf9ViDdT3GdvJhwoYmYa3yffIjmRAhh3W6r8qGXv1kiqwlMTO+oUSNqHJpkZUeild07LqRhEF3MoUiBGqdclKdMiz76JWXplNj9xcI0YsrPw+qKwAAAABJRU5ErkJggg==" />
+                </svg>
+            </div>
+        </div>
+   
+        <section class="section about" id="about">
+            <div class="container">
+                 <div class="about__container">
+                     <div class="about__container__img abaut--2x">
+                         <img class="about__container__img--image" src="img/img2.png">
+                     </div>
+                     <div class="about__container__content abaut--2x">
+                        <h2 class="about__container__content__title section__content__title">About Us</h2>
+                         <p class="about__content__subtitle section__content__subtitle">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                         <p class="about--container__content__subtitle section__content__subtitle">Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                     </div>
+                 </div>
+            </div>
+        </section>
+    </main>
+     
+   
+    <script src="https://kit.fontawesome.com/d357e3b57e.js" crossorigin="anonymous"></script>
+</body>
+</html>
